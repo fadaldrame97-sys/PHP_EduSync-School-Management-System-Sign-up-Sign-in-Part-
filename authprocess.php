@@ -23,6 +23,9 @@ $_SESSION['us'] = $email;
 header("location:dashboard.php");
 exit();
 
+include_once'data.php';
+
+
 
 }
 
