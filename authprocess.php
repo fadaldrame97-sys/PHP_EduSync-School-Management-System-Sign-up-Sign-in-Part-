@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if (isset($_POST["register"])){
 $nom=$_POST["nom"];
@@ -7,10 +8,23 @@ $email=$_POST["email"];
 $password=$_POST["password"];
 
 echo"Inscription réusssi";
+
 echo"<pre>";
 print_r($_POST);
 echo"<pre>";
 
 }
+if (isset($_POST["login"])){
+$nom=$_POST["email"];
+$password=$_POST["password"];
+
+$_SESSION['us'] = $email;
+
+header("location:dashboard.php");
+exit();
+
+
+}
+
  
 
