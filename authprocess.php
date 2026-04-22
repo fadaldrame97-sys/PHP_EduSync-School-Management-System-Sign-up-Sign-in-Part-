@@ -6,6 +6,7 @@ $pronpm=$_POST["prenom"];
 $email=$_POST["email"];
 $passeword=$_POST["password"];
 
+echo"Inscription réusssi";
 }
  
 
