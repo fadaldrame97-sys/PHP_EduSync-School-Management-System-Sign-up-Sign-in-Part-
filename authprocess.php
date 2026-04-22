@@ -28,6 +28,8 @@ include_once'data.php';
 $sql="INSERT INTO users (nom,prnom ,email,passeword)
 values('$nom','$prenom','$email','$password')";
 
+mysqli_query($connexion,$sql);
+
 };
 
  
