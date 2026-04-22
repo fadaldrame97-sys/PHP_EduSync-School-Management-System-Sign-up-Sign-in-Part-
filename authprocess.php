@@ -2,11 +2,15 @@
 
 if (isset($_POST["register"])){
 $nom=$_POST["nom"];
-$pronpm=$_POST["prenom"];
+$prenom=$_POST["prenom"];
 $email=$_POST["email"];
-$passeword=$_POST["password"];
+$password=$_POST["password"];
 
 echo"Inscription réusssi";
+echo"<pre>";
+print_r($_POST);
+echo"<pre>";
+
 }
  
 
