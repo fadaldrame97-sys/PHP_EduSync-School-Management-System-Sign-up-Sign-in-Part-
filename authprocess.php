@@ -20,7 +20,7 @@ $password=$_POST["password"];
 
 $_SESSION['us'] = $email;
 
-header("location:dashboard.php");
+header("location:dashboar.php");
 exit();
 
 
