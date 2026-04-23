@@ -15,6 +15,7 @@ $password=$_POST["password"];
 
 $sql="select* from users where email='$email'";
 $result=mysqli_query($connexion,$sql);
+
 if(mysqli_num_rows($result)>0){
    header("Location: register.php?error=email_exists");
         exit();
