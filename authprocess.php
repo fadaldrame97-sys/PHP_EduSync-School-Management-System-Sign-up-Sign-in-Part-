@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include_once'data.php';
 if (isset($_POST["register"])){
 $nom=$_POST["nom"];
 $prenom=$_POST["prenom"];
@@ -13,9 +13,16 @@ echo"<pre>";
 print_r($_POST);
 echo"<pre>";
 
+
+
+$sql="INSERT INTO users (nom,prnom ,email,passeword)
+values('$nom','$prenom','$email','$password')";
+
+mysqli_query($connexion,$sql);
+
 }
 if (isset($_POST["login"])){
-$nom=$_POST["email"];
+$email=$_POST["email"];
 $password=$_POST["password"];
 
 $_SESSION['us'] = $email;
@@ -23,12 +30,7 @@ $_SESSION['us'] = $email;
 header("location:dashboard.php");
 exit();
 
-include_once'data.php';
 
-$sql="INSERT INTO users (nom,prnom ,email,passeword)
-values('$nom','$prenom','$email','$password')";
-
-mysqli_query($connexion,$sql);
 
 };
 
