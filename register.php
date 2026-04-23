@@ -1,5 +1,7 @@
 
-
+<?php if(isset($_GET['error']) && $_GET['error']=="email_exists"): ?>
+<p style="color:red;">Email déjà utilisé</p>
+<?php endif; ?>
  
 <!DOCTYPE html>
 <html lang="en">
