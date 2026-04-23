@@ -20,6 +20,14 @@ values('$nom','$prenom','$email','$password')";
 
 mysqli_query($connexion,$sql);
 
+
+$sql="select* from users where email='$email'";
+$result=mysqli_query($connexion,$sql);
+if(mysqli_num_rows($result)>0){
+    //email existe déja
+}
+    
+
 }
 if (isset($_POST["login"])){
 $email=$_POST["email"];
@@ -33,6 +41,8 @@ exit();
 
 
 };
+
+
 
  
 
