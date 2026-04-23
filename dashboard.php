@@ -21,7 +21,7 @@ if (!isset($_SESSION['us'])) {
 <body class="flex justify-center items-center w-full h-100 text-center">
     <div class="w-1/2 h-1/2 bg-emerald-400 shadow-2xl rounded-lg">
 <h1 class="flex justify-center text-center items-baseline-last pt-15 font-bold text-3xl">Bienvenue dans votre votre espace </h1>
-<p> <?php echo $_SESSION['us'];?></p>
+<p class="pt-5 font-bold"> <?php echo $_SESSION['us'];?></p>
 </div>
 </body>
 </html>
