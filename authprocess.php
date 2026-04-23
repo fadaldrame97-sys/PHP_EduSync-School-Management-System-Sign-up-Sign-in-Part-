@@ -34,19 +34,22 @@ if (isset($_POST["login"])){
 $email=$_POST["email"];
 $password=$_POST["password"];
 
-$_SESSION['us'] = $email;
+
 
 $sql="select* from users where email='$email'&& passeword='$password' ";
 $result=mysqli_query($connexion,$sql);
 
-if(mysqli_num_rows($result)>1){
+if(mysqli_num_rows($result)==1){
+$_SESSION['us'] = $email;
+
 header("location:dashboard.php");
 exit();
 }
+else {
+header("location:login.php?error:invalid")
+exit();
 
-
-
-
+}
 
 
 
