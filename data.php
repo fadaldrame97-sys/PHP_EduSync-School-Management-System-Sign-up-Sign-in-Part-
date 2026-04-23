@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 $database="localhost";
 $db_user="root";
 $db_pass="";

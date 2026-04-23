@@ -1,4 +1,11 @@
 
+<?php 
+
+if (isset($_GET['error'])&& $_GET['error']=="invalid"):?>
+    <p>Email ou mot de passe incorrecte<p/>
+
+<?php endif;
+?>
 
 
 <!DOCTYPE html>
