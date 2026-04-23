@@ -49,7 +49,7 @@
                    text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">S'inscrire</button>
 
                   <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                      Tu as déja un compte? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Connectez-vous</a>
+                      Tu as déja un compte? <a href="login.php" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Connectez-vous</a>
                   </p>
               </form>
           </div>
