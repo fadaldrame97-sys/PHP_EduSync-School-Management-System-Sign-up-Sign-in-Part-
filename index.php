@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 ?>
@@ -11,7 +12,31 @@ session_start();
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="bg-green-300">
+  <div class="flex flex-col items-center justify-center h-screen text-center">
+
+ <h1 class="text-4xl font-bold mb-4">
+        Bienvenue sur EduSync
+    </h1>
+
+<?php if(isset($_SESSION['email'])): ?>
+
+        <!-- utilisateur connecté -->
+        <a href="dashboard.php"
+        class="bg-green-500 text-white px-6 py-3 rounded">
+            Aller au Dashboard
+        </a>
+
+        <a href="logout.php"
+        class="bg-green-500 text-white px-6 py-3 rounded ml-4">
+            Déconnexion
+        </a>
+
+    <?php else: ?>
+
+  </div>  
+
+
+
 </body>
 </html>
