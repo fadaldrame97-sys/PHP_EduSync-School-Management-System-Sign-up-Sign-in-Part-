@@ -23,5 +23,10 @@ if (!isset($_SESSION['us'])) {
 <h1 class="flex justify-center text-center items-baseline-last pt-15 font-bold text-3xl">Bienvenue dans votre votre espace </h1>
 <p class="pt-5 font-bold"> <?php echo $_SESSION['us'];?></p>
 </div>
+
+<a href="logout.php"
+class="bg-red-500 text-white px-4 py-2 rounded">
+Déconnexion
+</a>
 </body>
 </html>
