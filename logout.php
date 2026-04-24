@@ -1,4 +1,5 @@
 <?php
 session_start();
 session_destroy();
-h
+header("location:login.php");
+exit();
