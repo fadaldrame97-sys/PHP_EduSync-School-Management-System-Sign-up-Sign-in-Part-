@@ -37,12 +37,12 @@ session_start();
 
         
         <a href="login.php"
-        class="bg-blue-500 text-white px-6 py-3 rounded mr-4">
+        class="bg-green-700 text-white px-6 py-3 rounded mr-4">
             Se connecter
         </a>
 
         <a href="register.php"
-        class="bg-gray-800 text-white px-6 py-3 rounded">
+        class="bg-green-700 mt-4 text-white px-6 py-3 rounded">
             S'inscrire
         </a>
 
