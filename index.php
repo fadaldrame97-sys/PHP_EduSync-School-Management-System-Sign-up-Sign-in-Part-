@@ -21,7 +21,7 @@ session_start();
 
 <?php if(isset($_SESSION['email'])): ?>
 
-        <!-- utilisateur connecté -->
+    
         <a href="dashboard.php"
         class="bg-green-500 text-white px-6 py-3 rounded">
             Aller au Dashboard
@@ -33,6 +33,21 @@ session_start();
         </a>
 
     <?php else: ?>
+  
+
+        
+        <a href="login.php"
+        class="bg-blue-500 text-white px-6 py-3 rounded mr-4">
+            Se connecter
+        </a>
+
+        <a href="register.php"
+        class="bg-gray-800 text-white px-6 py-3 rounded">
+            S'inscrire
+        </a>
+
+    <?php endif; ?>
+
 
   </div>  
 
